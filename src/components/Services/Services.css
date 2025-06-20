@@ -1,0 +1,44 @@
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .service-card {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--hover-color);
+  }
+  
+  .service-card h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Tarjeta destacada usa el color de acento */
+  .value-add-card {
+    position: relative;
+    border-color: var(--accent-color);
+  }
+  
+  .value-add-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
+      color: var(--background-color);
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+  }
